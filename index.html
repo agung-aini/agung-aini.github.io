@@ -238,7 +238,7 @@
 					<div class="desc-groom">
 						<h3>Aini Hidayathy S.Kom</h3>
 						<p><span style="color: #bf9b73">Putri Kedua dari</span><br>
-							<span class="parents-font">Bapak Zainudin (Pak Mul)</span>
+							<span class="parents-font">Bapak Zainuddin (Pak Mul)</span>
 							<br>
 							<span class="parents-font">Ibu Elvirasari Harahap</span>
 						</p>
@@ -258,7 +258,7 @@
 					<div class="desc-bride">
 						<h3>Mhd. Agung Sadewo S.Kom</h3>
 						<p><span style="color: #bf9b73">Putra Pertama dari</span><br>
-							<span class="parents-font">Alm. Bapak Safarudin</span>
+							<span class="parents-font">Alm. Bapak Safaruddin</span>
 							<br>
 							<span class="parents-font">Ibu Atmawati</span>
 						</p>
@@ -302,7 +302,7 @@
 							</div>
 							<p style="font-family: 'Courgette', Arial, serif">Alamat : Komp. Purnayuda No 223 Jl Antara, Bakaran Batu, Lubuk Pakam</p>
 
-							<a href="https://goo.gl/maps/6DHaNZT1XyxLQJyt9" target="_blank"
+							<a href="https://goo.gl/maps/ZYKCRWN9wKzw5NzD8" target="_blank"
 							   class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
 						</div>
 					</div>
@@ -338,25 +338,43 @@
 		<img class="flower-3-top" src="images/background/flowers/top-2.svg">
 		<img class="flower-4-bottom" src="images/background/flowers/bottom-2.svg">
 
+
 		<div class="container">
 			<div class="row text-center">
 			  <div class="col">
-			  Wedding Gift
-			  <figcaption>Bank BRI a/n Aini Hidayathy</figcaption>
-			  </figure>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<strong><h1 style="color: #bf9b73">WEDDING GIFT</h1></strong>
+					<p></p>
+					<h3 style="color: #bf9b73">Bank BRI a/n Aini Hidayathy</h3>
+			  <figcaption> <h3></h3> </figcaption>
+		
 				 <!-- clipboard -->
-				<div id="container">
-			  <div id="text">026601060451504</div>
-			<button id="copy" tooltip="Copy to clipboard" class="material-symbols-outlined"> 
-		  <i class="bi bi-clipboard-check" onclick="copyToClipboard(text)"></i>
-		 </button>
+				
+			  <input class="form-copy" id="text-copy"  value="026601060451504">
+			  <button class="btn btn-copy btn-circle" onclick="copyText()">
+				<span class="fa fa-copy"></span> COPY
+			</button>
 			  <span id="popupCopy2" class="popuptext"></span>
-				 </div>
+			  <script type="text/javascript">
+				$(document).ready(function(){
+					$('.btn-copy').on("click", function(){
+						var value = $('#text-copy').text();
+					   
+						var $tempCopy = $("<input>");
+							$("body").append($tempCopy);
+							$tempCopy.val(value).select();
+							document.execCommand("copy");
+							$tempCopy.remove();
+					})
+				})
+			</script>
+				  
 			  </div>
 			</div>
 		  </div>
 	</div>
 
+	
 	<!--<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
         <div class="overlay"></div>
         <div class="container">
@@ -831,9 +849,9 @@
 		if( (navigator.platform.indexOf("iPhone") != -1)
 				|| (navigator.platform.indexOf("iPod") != -1)
 				|| (navigator.platform.indexOf("iPad") != -1))
-			window.open("maps://www.google.com/maps?daddr=masjid+keuchik+leumik");
+			window.open("https://goo.gl/maps/ZYKCRWN9wKzw5NzD8");
 		else
-			window.open("https://www.google.com/maps?daddr=masjid+keuchik+leumik");
+			window.open("https://goo.gl/maps/ZYKCRWN9wKzw5NzD8");
 	}
 
 	function walimahLocation(){
