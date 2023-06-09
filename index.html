@@ -181,7 +181,16 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<h1>Agung & Aini</h1>
 						<p style="margin-bottom: 0">Kepada Bapak/Ibu/Saudara/i</p>
+						<script>
+							const queryString = document.location.search;
+							const urlParams = new URLSearchParams(queryString);
+							const namatamu = urlParams.get('to')
+							
+							document.write(namatamu);
+							
+							</script>
 						<p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
+						
 
 						<button class="btn btn-primary" id="open-invitation">Buka Undangan</button>
 					</div>
@@ -189,6 +198,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<div id="fh5co-header">
 		<div class="container">
@@ -775,6 +785,9 @@
 		$("html, body").animate({ scrollTop: $(`#${el}`).offset().top }, 1000);
 	}
 </script>
+
+
+
 
 <script>
 	// 2. This code loads the IFrame Player API code asynchronously.
