@@ -360,24 +360,26 @@
 		
 				 <!-- clipboard -->
 				
-			  <input class="form-copy" id="text-copy"  value="026601060451504">
-			  <button class="btn btn-copy btn-circle" onclick="copyText()">
-				<span class="fa fa-copy"></span> COPY
-			</button>
-			  <span id="popupCopy2" class="popuptext"></span>
-			  <script type="text/javascript">
-				$(document).ready(function(){
-					$('.btn-copy').on("click", function(){
-						var value = $('#text-copy').text();
-					   
-						var $tempCopy = $("<input>");
-							$("body").append($tempCopy);
-							$tempCopy.val(value).select();
-							document.execCommand("copy");
-							$tempCopy.remove();
-					})
-				})
-			</script>
+				 <input type="text" value="026601060451504" id="myInput">
+				 <button onclick="myFunction()">Copy text</button>
+				 
+				 <script>
+				 function myFunction() {
+				   // Get the text field
+				   var copyText = document.getElementById("myInput");
+				 
+				   // Select the text field
+				   copyText.select();
+				   copyText.setSelectionRange(0, 99999); // For mobile devices
+				 
+				   // Copy the text inside the text field
+				   navigator.clipboard.writeText(copyText.value);
+				   
+				   // Alert the copied text
+				   alert("Copied the text: " + copyText.value);
+				 }
+				 </script>
+				 
 				 </div>
 			  </div>
 			</div>
